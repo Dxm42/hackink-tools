@@ -23,10 +23,10 @@ EOF
 
         echo "Resolving Hosts .......\n"
 
-        for url in $(cat lista.txt);
+        for url in $(cat list.txt);
         do
                 host $url | grep "has address";
         done
-        rm lista.txt 
+        rm list.txt 
         rm index.html
 fi
